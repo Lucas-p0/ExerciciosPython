@@ -8,14 +8,20 @@ from datetime import date
 anoNascimento = int(input('Ano de nascimento:'))
 dataAtual = date.today().year
 idade =  dataAtual - anoNascimento
-anoAlistamento = idade - 18
+
 
 
 
 print('Quem nasceu em {} e tem {} anos em {}.'.format(anoNascimento, idade, dataAtual))
 if idade < 18:
-    print("Ainda faltam {} anos para o alistamento.".format(anoAlistamento))
+    calculoAlistamento = 18 - idade
+    anoDoAlistamento = dataAtual + calculoAlistamento
+    print("Ainda faltam {} anos para o alistamento, você se alistará em {} .".format(calculoAlistamento, anoDoAlistamento))
+
+
 elif idade > 18:
-    print("Você deveria ter se alistado há {} anos .".format(anoAlistamento))
+    calculoAlistamento = idade - 18
+    anoDoAlistamento = dataAtual - calculoAlistamento
+    print("Você deveria ter se alistado há {} anos, em {} .".format(calculoAlistamento, anoDoAlistamento))
 else:
     print("Você tem que se alistar IMEDIATAMENTE!")
