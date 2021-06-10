@@ -7,7 +7,7 @@ mostrando uma mensagem no final, de acordo com a média atingida:
 num1 = float(input('Digite a primeira nota:'))
 num2 = float(input('Digite a segunda nota:'))
 media = (num1 + num2) / 2
-print('Com as notas {:.2f} e {:.2f}, a média {:.2f}.'.format(num1, num2, media))
+print('Com as notas {:.1f} e {:.1f}, a média {:.1f}.'.format(num1, num2, media))
 if media >= 7:
     print('Aluno aprovado! ')
 elif 6.9 >= media > 5:
