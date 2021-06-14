@@ -7,11 +7,12 @@ de acordo com a idade:
 - Até 25 anos: SÊNIOR
 - Acima de 25 anos: MASTER"""
 
-#variaveis
 from datetime import date
 
 anoNascimento = int(input('Digite o ano de nascimento do atleta!:'))
 idade = date.today().year - anoNascimento
+
+
 print('Você tem {} anos de idade categoria:'.format(idade))
 if idade < 9:
     print('Mirim')
