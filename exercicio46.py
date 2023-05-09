@@ -3,6 +3,7 @@ from pickle import TRUE
 
 idades = [17, 18, 19, 15, 14, 22, 23, 10, 25]
 
+
 maiores_de_idade = [x for x in idades if x >= 18]
 menores_de_idade = [x for x in idades if x < 18]
 print(maiores_de_idade)
