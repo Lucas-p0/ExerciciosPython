@@ -1,4 +1,4 @@
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 from random import randrange, seed
 
 seed(10)
@@ -15,6 +15,8 @@ len(notas_de_matematica)
 
 x = list(range(1, 9))
 y = notas_de_matematica
-plt.plot(x, y)
+plt.plot(x, y, marker='o')
 plt.title('Notas de Matemática')
+plt.xlabel('Provas')
+plt.ylabel('Notas')
 plt.show()
