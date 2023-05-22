@@ -17,10 +17,8 @@ def contador_multiplo_tres(valor: int):
         for lista in lista_multiplo_tres:
             soma_de_lista += lista
 
-    # print(quantidade)
-    # print(lista_multiplo_tres)
     print(
-        f'A quantidad de multiplos de 3 de 0 até 500 é de {len(lista_multiplo_tres)} e a soma desses numeros é {soma_de_lista}')
+        f'A quantidad de multiplos de 3 de 0 até 500 é de {quantidade} e a soma desses numeros é {soma_de_lista}')
 
 
 contador_multiplo_tres(0)
