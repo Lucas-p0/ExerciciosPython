@@ -1,3 +1,6 @@
+'''Exercício Python 014: Escreva um programa que converta uma temperatura digitando em graus Celsius e 
+converta para graus Fahrenheit.
+'''
 temperatura_c = float(input('Digite a temperatura em °c:'))
 temperatura_f = (temperatura_c*9/5)+32
 temperatura_k = temperatura_c+273.15
