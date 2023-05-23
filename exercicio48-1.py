@@ -18,7 +18,7 @@ def contador_multiplo_tres(valor: int):
             soma_de_lista += lista
 
     print(
-        f'A quantidad de multiplos de 3 de 0 até 500 é de {quantidade} e a soma desses numeros é {soma_de_lista}')
+        'A quantidad de multiplos de 3 de 0 até 500 é de {} e a soma desses numeros é {}'.format(quantidade, soma_de_lista))
 
 
 contador_multiplo_tres(0)
